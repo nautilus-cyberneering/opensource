@@ -39,7 +39,7 @@ The goal of this repository is to help you get acquainted with the elements that
 
 ### Sample conclusion documents and proposals
 
-- [BOKEN ENGINE - Proposed Business Model](Research/sample_conclusions/'BOKEN%ENGINE%–%Proposed Business%Model.md')
+- [BOKEN ENGINE - Proposed Business Model](<Research/sample_conclusions/BOKEN ENGINE – Proposed Business Model.md>)
 - [Proposal Governance "Benevolent Dictator"](Research/sample_conclusions/proposal_governance_bdfl.md)
 - [Proposal Governance "Liberal"](Research/sample_conclusions/proposal_governance_liberal.md)
 - [Use Cases and Communities](Research/sample_conclusions/use-cases-and-communities.md)
