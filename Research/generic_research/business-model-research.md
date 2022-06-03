@@ -237,6 +237,6 @@ managers who need to save time or money?
 
 
 Annex:
--	Wikipwedia: https://en.wikipedia.org/wiki/Business_models_for_open-source_software
+-	Wikipedia: https://en.wikipedia.org/wiki/Business_models_for_open-source_software
 -	https://www.bountysource.com/
 -	Martin, Donald & Foulonneau, Muriel. (2014). Guide to Open Source Business Models - Leveraging a Free and Open Source Software framework to develop commercialization strategies for IT Research & Development projects. 10.13140/2.1.4393.7281. --- https://www.researchgate.net/publication/266803987_Guide_to_Open_Source_Business_Models_-_Leveraging_a_Free_and_Open_Source_Software_framework_to_develop_commercialization_strategies_for_IT_Research_Development_projects

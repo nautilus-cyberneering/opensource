@@ -1,4 +1,6 @@
-# Open Source Information
+![Open Source Software](Research/images/Open_Source.jpg)
+
+# Open Source Software Project Information
 
 The goal of this repository is to help you get acquainted with the elements that you need to consider when setting up an Open Source project or starting to contribute to one.
 
@@ -23,7 +25,7 @@ The goal of this repository is to help you get acquainted with the elements that
 
 ---
 
-## 1. Creating an Open Source Project
+## 1. Creating an Open Source Project 🎈🚀🎆
 
 ---
 
@@ -109,7 +111,7 @@ If you want to learn more about other licenses we encourage you to go to these w
 
 ---
 
-## Contributing to Open Source Projects
+## Contributing to Open Source Projects 👍🙋🆒🆓
 
 ---
 
