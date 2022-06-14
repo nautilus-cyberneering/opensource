@@ -1,0 +1,11 @@
+site_name: Open Source Guide
+site_url: https://nautilus-cyberneering.github.io/opensource/
+nav:
+    - Home: index.md
+    - Best Practices: best-practices.md
+    - Releases Process: releases-process.md
+    - Choose a License: choose-a-license.md
+    - Communication: communication.md
+    - Contents Creation: contents-creation-guide.md
+    - Governance Model: define-a-governance-model.md
+    - Business Model: business-model-research.md
