@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Contributing to Boken Engine - My Docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Open Source Project Guide</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../releases-process/" class="nav-link">Version number scheme</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sample conclusions <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../sample_conclusions/BOKEN%20ENGINE%20%E2%80%93%20Proposed%20Business%20Model/" class="dropdown-item">BOKEN ENGINE – Proposed Business Model</a>
+</li>
+                                    
+<li>
+    <a href="../../sample_conclusions/proposal_governance_bdfl/" class="dropdown-item">Governance</a>
+</li>
+                                    
+<li>
+    <a href="../../sample_conclusions/proposal_governance_liberal/" class="dropdown-item">Governance</a>
+</li>
+                                    
+<li>
+    <a href="../../sample_conclusions/use-cases-and-communities/" class="dropdown-item">Use cases and communities</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Templates licenses <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../templates_licenses/agpl-3.0/" class="dropdown-item">GNU AFFERO GENERAL PUBLIC LICENSE</a>
+</li>
+                                    
+<li>
+    <a href="../../templates_licenses/cc-by-sa/" class="dropdown-item">Creative Commons Attribution-ShareAlike 4.0 International</a>
+</li>
+                                    
+<li>
+    <a href="../../templates_licenses/cc0/" class="dropdown-item">Creative Commons CC0 1.0 Universal</a>
+</li>
+                                    
+<li>
+    <a href="../../templates_licenses/contributor_agreement_v01/" class="dropdown-item">Contributor agreement v01</a>
+</li>
+                                    
+<li>
+    <a href="../../templates_licenses/mit-0/" class="dropdown-item">Copyright 2021 Nautilus Cyberneering GmbH</a>
+</li>
+                                    
+<li>
+    <a href="../../templates_licenses/mpl-2.0/" class="dropdown-item">Mpl 2.0</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Templates repository starting <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../CODE_OF_CONDUCT/" class="dropdown-item">Contributor Covenant Code of Conduct</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Contributing to Boken Engine</a>
+</li>
+                                    
+<li>
+    <a href="../GOVERNANCE_BD/" class="dropdown-item">Governance</a>
+</li>
+                                    
+<li>
+    <a href="../contributor_agreement_v01/" class="dropdown-item">The Nautilus Cyberneering Contributor Agreement</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../CODE_OF_CONDUCT/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../GOVERNANCE_BD/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#contributing-to-boken-engine" class="nav-link">Contributing to Boken Engine</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#table-of-contents" class="nav-link">Table of Contents</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#what-to-know-before-contributing" class="nav-link">What to know before contributing</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#how-can-i-contribute" class="nav-link">How can I contribute?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#styleguides-note-must-be-customized-for-each-project" class="nav-link">Styleguides - (NOTE: Must be customized for each project)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#issues-commits-and-pull-requests" class="nav-link">Issues, commits and Pull Requests</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="contributing-to-boken-engine">Contributing to Boken Engine</h1>
+<p>We are really happy to know that you want to contribute to the project!
+However, to ensure that the project keeps improving without compromising its integrity or quality, please follow this guide to ensure that your contribution is as useful as possible.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#what-to-know-before-contributing">What to know before contributing</a></li>
+<li><a href="#how-can-i-contribute">How can I contribute?</a></li>
+<li><a href="#bug-reporting">Bug reporting</a></li>
+<li><a href="#new-features-suggestion">New features suggestion</a></li>
+<li><a href="#committing-code-to-an-issue">Committing code to an issue</a></li>
+<li><a href="#additional-documentation">Additional documentation</a></li>
+<li><a href="#styleguides">Styleguides</a></li>
+<li><a href="#swift-styleguide">Swift styleguide</a></li>
+<li><a href="#documentation-styleguide">Documentation styleguide</a></li>
+<li><a href="#issues-commits-and-pull-requests">Issues, commits and Pull Requests</a></li>
+<li><a href="#commit-messages">Commit messages</a></li>
+</ol>
+<h2 id="what-to-know-before-contributing">What to know before contributing</h2>
+<p>Please, be aware that Boken Engine <strong>is a Framework written in Swift</strong>. The code in the repository is the XCode project of the framework, and therefore, cannot be used directly to generate an iOS App.
+Boken Engine is neither an iOS Application, a library nor a package. All contributions must respect the identity of the project and do not add anything that infringe it (i.e. making the project contents-specific, coupling it to a particular App or preventing it to be reusable as a framework)</p>
+<h2 id="how-can-i-contribute">How can I contribute?</h2>
+<h3 id="bug-reporting">Bug reporting</h3>
+<p>Before creating bug reports, please check if the problem has already been reported. If it has and the issue is still open, add a comment to the existing issue instead of opening a new one. If you find a Closed issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one.
+If the problem hasn't been reported, create a new <a href="https://guides.github.com/features/issues/">GitHub issue</a>, providing the following information:</p>
+<ul>
+<li><strong>A clear and descriptive title</strong>  for the issue to identify the problem.</li>
+<li><strong>A description of the  steps which reproduce the problem</strong>, as detailed as possible.</li>
+<li><strong>Describe the behavior you observed after following the steps</strong>  and why that behaviour is erroneous or unexpected.</li>
+<li>If possible, <strong>include screenshots and animated GIFs</strong>  </li>
+</ul>
+<h3 id="new-features-suggestion">New features suggestion</h3>
+<p>Features / improvement suggestions are submitted as  <a href="https://guides.github.com/features/issues/">GitHub issues</a>.  Please, before submitting a new one, please check if the improvement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
+When creating a improvement issue, please provide the following information:</p>
+<ul>
+<li><strong>Use a clear and descriptive title</strong>  for the issue to identify the suggestion.</li>
+<li><strong>Provide a description of the suggested enhancement</strong>  as detailed as possible</li>
+<li><strong>Explain why this improvement would be useful</strong>  to most users</li>
+</ul>
+<h3 id="committing-code-to-an-issue">Committing code to an issue</h3>
+<p>Before writing any code for the repository, please review the Swift styleguides. Please, check that the new code will not compromise the quality, stability or security of the codebase.
+Any new code is added to the repository using Pull Requests that must be reviewed and approved by the community before being merged or rebased to the repository.
+When creating the commit and the pull request, please refer also to the section Issues, Commits and Pull Requests.
+Whenever is possible, new features should have Unit Tests to maintain (or increase) the code test coverage before adding it.</p>
+<h3 id="additional-documentation">Additional documentation</h3>
+<p>New documentation contributions are also welcomed. They can improve the official documentation, add new examples or tutorials.
+The new documents must be added to the "docs" folder, and they must be created or modified using the same issue - pull request method as the code contributions.
+Document format should be MarkDown unless an alternative format is really necessary. Naming should adhere to underscore <a href="https://en.wikipedia.org/wiki/Letter_case#Special_case_styles">kebab-case</a>.</p>
+<h2 id="styleguides-note-must-be-customized-for-each-project">Styleguides - (NOTE: Must be customized for each project)</h2>
+<h3 id="swift-styleguide">Swift styleguide</h3>
+<h4 id="fundamentals">Fundamentals</h4>
+<ul>
+<li>
+<p><strong>Clarity</strong> at the point of use is your most important goal. Clarity is more important than brevity</p>
+</li>
+<li>
+<p>Projects should not throw any warnings when built.</p>
+</li>
+</ul>
+<h4 id="conventions">Conventions</h4>
+<ul>
+<li>
+<p>Prefer methods and properties to free functions.</p>
+</li>
+<li>
+<p>Prefer to locate parameters with defaults toward the end.</p>
+</li>
+<li>
+<p>Conditional code checks "the golden path" (the most probable option) first. </p>
+</li>
+<li>
+<p>Inverted checks (like !incorrect) are discouraged because of poor readability.</p>
+</li>
+<li>
+<p>Use argument labels (unless not useful or part of a grammatical phrase)</p>
+</li>
+<li>
+<p>If possible, avoid <em>any</em> type.</p>
+</li>
+<li>
+<p>Use self only when required by the compiler (i.e. disambiguate properties from arguments in initializers)</p>
+</li>
+</ul>
+<h4 id="code-editing">Code editing</h4>
+<ul>
+<li>
+<p>Use 2 blank spaces block indent</p>
+</li>
+<li>
+<p>Indentation is made with whitespaces, not with tabs</p>
+</li>
+<li>
+<p>Semicolons (;) are not used, either to terminate or separate statements.</p>
+</li>
+<li>
+<p>Annotations go onto a separate line before the declaration.</p>
+</li>
+<li>
+<p>Use OTBS brackets style</p>
+</li>
+</ul>
+<h4 id="naming">Naming</h4>
+<ul>
+<li>
+<p>Include all the words needed to avoid ambiguity, but omit needless words</p>
+</li>
+<li>
+<p>Name entities according to their roles, rather than their type constraints.</p>
+</li>
+<li>
+<p>Names of types and protocols are UpperCamelCase. Everything else is lowerCamelCase.</p>
+</li>
+<li>
+<p>Declarations should form correct human-readable phrases when read aloud.</p>
+</li>
+<li>
+<p>Methods without side-effects have <strong>noun</strong> names (originalSize()). Methods with side effects have <strong>imperative verb</strong> names (sort()). Non-mutating methods that return new values have <strong>past participle</strong> names (sorted()) or a <strong>noun</strong> if the operation is naturally described by it (union())</p>
+</li>
+<li>
+<p>Protocols that describe <em>what</em> something is should read as <strong>nouns</strong> (Collection). Protocols that describe a capability should be named using -able, -ible, or -ing (Equatable, ProgressReporting).</p>
+</li>
+<li>
+<p>Avoid abbreviations</p>
+</li>
+</ul>
+<h4 id="comments">Comments</h4>
+<ul>
+<li>
+<p><strong>Self-documented code</strong> is preferred over comments.</p>
+</li>
+<li>
+<p>When completely needed, comments must be written using double slash (//) instead of block syntax (/<em>...</em>/). Comments must be kept up-to-date or deleted.</p>
+</li>
+<li>
+<p>Public APIs should have HeaderDoc documentation using JavaDoc standards.</p>
+</li>
+</ul>
+<h4 id="imports">Imports</h4>
+<ul>
+<li>
+<p>All imports go alphabetically sorted at the very beginning of the file. Empty lines between imports are not used.</p>
+</li>
+<li>
+<p>Import only the modules a source file requires.</p>
+</li>
+<li>
+<p>Do not insert a blank line between imports.</p>
+</li>
+</ul>
+<h3 id="documentation-styleguide">Documentation styleguide</h3>
+<p>Documentation should use MarkDown (.md) format. It must be written at least in English, but additional localized versions are also possible.</p>
+<h2 id="issues-commits-and-pull-requests">Issues, commits and Pull Requests</h2>
+<p>Each pull request for new commits must be related to a particular issue, and will be reviewed by the community before being merged or rebased to the codebase.</p>
+<h3 id="commit-messages">Commit messages</h3>
+<ul>
+<li>Use the present tense and imperative mood ("Add feature", "Change cursor color")</li>
+<li>Limit the first line to 72 characters or less</li>
+<li>Reference issues and pull requests liberally after the first line</li>
+<li>
+<p>Consider starting the commit message with an applicable emoji (taken from the <a href="https://github.com/atom/atom/blob/master/CONTRIBUTING.md">Atom Contribution Guidelines</a>):</p>
+<ul>
+<li>:art: <code>:art:</code> when improving the format/structure of the code</li>
+<li>:racehorse: <code>:racehorse:</code> when improving performance</li>
+<li>:non-potable_water: <code>:non-potable_water:</code> when plugging memory leaks</li>
+<li>:memo: <code>:memo:</code> when writing docs</li>
+<li>:bug: <code>:bug:</code> when fixing a bug</li>
+<li>:fire: <code>:fire:</code> when removing code or files</li>
+<li>:white_check_mark: <code>:white_check_mark:</code> when adding tests</li>
+<li>:lock: <code>:lock:</code> when dealing with security</li>
+<li>:shirt: <code>:shirt:</code> when removing linter warnings</li>
+</ul>
+</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

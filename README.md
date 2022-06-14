@@ -1,6 +1,6 @@
-![Open Source Software](Research/images/Open_Source.jpg)
+# Open Source Guide
 
-# Open Source Software Project Information
+![Open Source Software](/opensource/docs/images/Open_Source.jpg)
 
 The goal of this repository is to help you get acquainted with the elements that you need to consider when setting up an Open Source project or starting to contribute to one.
 
@@ -31,20 +31,20 @@ The goal of this repository is to help you get acquainted with the elements that
 
 ### Generic Research
 
-- [Best Practices](Research/generic_research/best-practices.md)
-- [Choose a license](Research/generic_research/choose-a-license.md)
-- [Business Model Research](Research/generic_research/business-model-research.md)
-- [Communication](Research/generic_research/communication.md)
-- [Contents Creation Guide](Research/generic_research/contents-creation-guide.md)
-- [Defining a governance model](Research/generic_research/define-a-governance-model.md)
-- [Releases process](Research/generic_research/releases-process.md)
+- [Best Practices](/opensource/docs/best-practices.md)
+- [Choose a license](/opensource/docs/choose-a-license.md)
+- [Business Model Research](/opensource/docs/business-model-research.md)
+- [Communication](/opensource/docs/communication.md)
+- [Contents Creation Guide](/opensource/docs/contents-creation-guide.md)
+- [Defining a governance model](/opensource/docs/define-a-governance-model.md)
+- [Releases process](/opensource/docs/releases-process.md)
 
 ### Sample conclusion documents and proposals
 
-- [BOKEN ENGINE - Proposed Business Model](<Research/sample_conclusions/BOKEN ENGINE – Proposed Business Model.md>)
-- [Proposal Governance "Benevolent Dictator"](Research/sample_conclusions/proposal_governance_bdfl.md)
-- [Proposal Governance "Liberal"](Research/sample_conclusions/proposal_governance_liberal.md)
-- [Use Cases and Communities](Research/sample_conclusions/use-cases-and-communities.md)
+- [BOKEN ENGINE - Proposed Business Model](/opensource/docs/sample_conclusions/BOKEN_ENGINE_–_Proposed_Business_Model.md)
+- [Proposal Governance "Benevolent Dictator"](/opensource/docs/sample_conclusions/proposal_governance_bdfl.md)
+- [Proposal Governance "Liberal"](/opensource/docs/sample_conclusions/proposal_governance_liberal.md)
+- [Use Cases and Communities](/opensource/docs/sample_conclusions/use-cases-and-communities.md)
 
 ### Recommended Readings
 
@@ -76,10 +76,10 @@ The goal of this repository is to help you get acquainted with the elements that
 
 #### Repository Starting Documentation Templates
 
-- [Code of Conduct](Research/templates_repository_starting/CODE_OF_CONDUCT.md)
-- [Governance](Research/templates_repository_starting/GOVERNANCE_BD.md)
-- [Contributing](Research/templates_repository_starting/CONTRIBUTING.md)
-- [Contributor Agreement](Research/templates_repository_starting/contributor_agreement_v01.md)
+- [Code of Conduct](/opensource/docs/templates_repository_starting/CODE_OF_CONDUCT.md)
+- [Governance](/opensource/docs/templates_repository_starting/GOVERNANCE_BD.md)
+- [Contributing](/opensource/docs/templates_repository_starting/CONTRIBUTING.md)
+- [Contributor Agreement](/opensource/docs/templates_repository_starting/contributor_agreement_v01.md)
 
 ### Licenses
 
@@ -88,12 +88,12 @@ These are licenses that we have used in various projects.
 
 Sample licenses:
 
-- [MPL v. 2.0](Research\templates_licenses\mpl-2.0.md)
-- [AGPL v. 3.0](Research\templates_licenses\agpl-3.0.md)
-- [AGPL v. 3.0 - File Header Text](Research\templates_licenses\agpl-3.0-file_header.txt)
-- [cc0](Research\templates_licenses\cc0.md)
-- [ccbysa](Research\templates_licenses\cc-by-sa.md)
-- [MIT v.0](Research\templates_licenses\mit-0.md)
+- [MPL v. 2.0](/opensource/docs/templates_licenses/mpl-2.0.md)
+- [AGPL v. 3.0](/opensource/docs/templates_licenses/agpl-3.0.md)
+- [AGPL v. 3.0 - File Header Text](/opensource/docs/templates_licenses/agpl-3.0-file_header.txt)
+- [cc0](/opensource/docs/templates_licenses/cc0.md)
+- [ccbysa](/opensource/docs/templates_licenses/cc-by-sa.md)
+- [MIT v.0](/opensource/docs/templates_licenses/mit-0.md)
 
 If you want to learn more about other licenses we encourage you to go to these websites:
 

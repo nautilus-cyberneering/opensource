@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>BOKEN ENGINE – Proposed Business Model - My Docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Open Source Project Guide</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../releases-process/" class="nav-link">Version number scheme</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sample conclusions <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">BOKEN ENGINE – Proposed Business Model</a>
+</li>
+                                    
+<li>
+    <a href="../proposal_governance_bdfl/" class="dropdown-item">Governance</a>
+</li>
+                                    
+<li>
+    <a href="../proposal_governance_liberal/" class="dropdown-item">Governance</a>
+</li>
+                                    
+<li>
+    <a href="../use-cases-and-communities/" class="dropdown-item">Use cases and communities</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Templates licenses <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../templates_licenses/agpl-3.0/" class="dropdown-item">GNU AFFERO GENERAL PUBLIC LICENSE</a>
+</li>
+                                    
+<li>
+    <a href="../../templates_licenses/cc-by-sa/" class="dropdown-item">Creative Commons Attribution-ShareAlike 4.0 International</a>
+</li>
+                                    
+<li>
+    <a href="../../templates_licenses/cc0/" class="dropdown-item">Creative Commons CC0 1.0 Universal</a>
+</li>
+                                    
+<li>
+    <a href="../../templates_licenses/contributor_agreement_v01/" class="dropdown-item">Contributor agreement v01</a>
+</li>
+                                    
+<li>
+    <a href="../../templates_licenses/mit-0/" class="dropdown-item">Copyright 2021 Nautilus Cyberneering GmbH</a>
+</li>
+                                    
+<li>
+    <a href="../../templates_licenses/mpl-2.0/" class="dropdown-item">Mpl 2.0</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Templates repository starting <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../templates_repository_starting/CODE_OF_CONDUCT/" class="dropdown-item">Contributor Covenant Code of Conduct</a>
+</li>
+                                    
+<li>
+    <a href="../../templates_repository_starting/CONTRIBUTING/" class="dropdown-item">Contributing to Boken Engine</a>
+</li>
+                                    
+<li>
+    <a href="../../templates_repository_starting/GOVERNANCE_BD/" class="dropdown-item">Governance</a>
+</li>
+                                    
+<li>
+    <a href="../../templates_repository_starting/contributor_agreement_v01/" class="dropdown-item">The Nautilus Cyberneering Contributor Agreement</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../releases-process/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../proposal_governance_bdfl/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#boken-engine-proposed-business-model" class="nav-link">BOKEN ENGINE – Proposed Business Model</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#proposed-business-model" class="nav-link">Proposed Business Model</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#future-evolution-of-the-software-and-business-model" class="nav-link">Future evolution of the software and business model</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="boken-engine-proposed-business-model">BOKEN ENGINE – Proposed Business Model</h1>
+<h3 id="objective-of-the-proposed-business-model-canvas">Objective of the proposed business model canvas</h3>
+<p>The objective of the proposed canvas is to reflect what is possible and what elements are relevant to be considered in this model.  The proposed elements are assumptions that will need to be validated and which have been made upon the previous research done on this topic by our team.</p>
+<p>For the current proposed business model, the following considerations have been considered:
+-   Project License &amp; Philosophy
+-   Current state of the software
+-   Current objectives of the project
+-   Available resource limitations</p>
+<h3 id="license-philosophy">License &amp; Philosophy</h3>
+<ul>
+<li>One of the main objectives of the project is to make our solution available to all and have people contribute and evolve it for the benefit of everyone who wants to use it.</li>
+<li>MPL Licensing options grants the possibility to also use the code and expand it clearly differentiating the proprietary code from the free open-source code.</li>
+<li>We want the project to become a relevant and useful tool for our users so that we will add new features based upon cumulative future requests and inquiries or financial support received for specific purposes.</li>
+<li>If you want to make money using Boken Engine you can do so and should not be hampered in doing this, leaving the door open to different options for the creation of additional paid and unpaid features by the Boken Team and other developers.</li>
+</ul>
+<h3 id="current-state-of-the-software">Current state of the software</h3>
+<ul>
+<li>The Boken Engine software now (2021 March) does not have any visual user interface and requires both for install and productive use development skills, which excludes non developers from using it on their own. The current proposed business model reflects this fact and is built upon this underlying condition.</li>
+</ul>
+<h3 id="current-objectives-of-the-project">Current objectives of the project</h3>
+<ul>
+<li>The current objective for us is to make advertise and make our project known to the public be they developers or end users. </li>
+<li>To incentivize developers to contribute and use the Boken Engine.</li>
+<li>To capture the attention and display the potential of this solution.</li>
+<li>To further develop its features and usability.</li>
+<li>To cover costs.</li>
+<li>To test the different elements of the business model.</li>
+<li>To create a beautiful Demo that will display all the current potential of Boken Engine.</li>
+</ul>
+<h2 id="proposed-business-model">Proposed Business Model</h2>
+<p>The proposed business model is a combination of the researched business models and an idea of crowdsourcing funds through the creation of our own demo apps as a form to create and display the potential of our tool.</p>
+<p>The two main business models that we believe can be employed are the standard Support Service Model and the Related Services or Products model which are feasible with the chosen MPL license.</p>
+<p>For the model to cover costs at first, and in the future to become profitable to further explore and expand it, it is essential to keep it as open as possible and that we make high quality examples of what can be achieved with our solution to incentivize adoption.
+Each of the elements will be explained in more detail below.</p>
+<h3 id="customer-segments">Customer Segments</h3>
+<p>These are the initial customer groups that we can aim at given the state of the software and based upon the services and products that we can deliver right now with a reasonable effort and considering our own available resources.</p>
+<h3 id="customer-relationships">Customer relationships</h3>
+<p>The relationships with contributors and the users that we can currently address through the different platforms that are either already set up or can be set up.</p>
+<p>GITHUB community a related forum and a website or blog of the project to keep people updated on the progress. Initially the effort will be minimal except for the technical setup of the various elements in this section. At a later stage when more people join the effort will increase, for instance the Project Community of contributors etc. will have to be daily, a blog letter should if possible be weekly.</p>
+<p>On the other hand, if we are to run a Kickstarter Campaign, we will have to prepare to interact daily to take care of followers and buyers.
+Channels </p>
+<p>These are the points of contact with potential customers and contributors.
+We believe that the main channels are going to be digital and online, most of them being free and with no monetary cost except for the time we will have to dedicate to this task.</p>
+<p>The ones that we believe will be free are marked in light Green.
+The Demo app can be seen as a channel two since it will help us reach customers through branding it and including links to our website, Github etc. The requirement of time for this app we estimate it to be 40 MDs.</p>
+<p>Depending on whether we decide to launch a Kickstarter Campaign this has the potential to be sales and promotion channel for the project that could reach End Users of this type of final apps.</p>
+<h3 id="key-propositions-value-creation">Key propositions - Value Creation</h3>
+<p>These are the main benefits of using Boken Engine for the different customer Groups and the services that will be provided. For better understanding we have divided them in areas:
+- Source Code Related
+- License Related
+- Community Related</p>
+<h3 id="key-activities">Key Activities</h3>
+<p>The relevant activities to engage to make the model work are the tasks or things that we need to engage with and accomplish.
+Here we believe that it is going to be, such as developing Boken Engine more, develop support material such as video tutorials, documentation, basic marketing, through the mentioned channels. </p>
+<h3 id="key-resources">Key Resources</h3>
+<p>These are the elements that are essential to our activities, our experts the community and design resources for any app that we will make, and which will have to be found.</p>
+<h3 id="key-partners">Key Partners</h3>
+<p>To gain competitive advantage we heavily rely on our success to create a large community of contributors and users, in addition to sufficient adoption of Boken Engine so that independent software developers start to adopt it for work related issues.</p>
+<h3 id="cost-structure">Cost Structure</h3>
+<p>This section reflects the approximate costs in time that we expect to have during the coming three 4 months, and the cost streams, our own in-house developers, etc.</p>
+<p>Also, I have indicated the possibility of a marketing budget, depending on the internal funds that we will get access to.</p>
+<h3 id="revenue-streams">Revenue Streams</h3>
+<p>For the coming 4 months no revenues are expected.
+The intention and main goals are to create a steady flow of revenues to support the continuing growth of Boken Engine. The main volume if we adhere to this business model and gain traction will come mostly from support services such as consulting, custom developments, support and documentation.</p>
+<p>As a second potential stream we think that it is interesting to explore Kickstarter crowdsourcing.</p>
+<p>If we are able to launch and successfully run a Kickstarter campaign to promote our own apps we could expect a certain amount of revenues also from this source.</p>
+<p>We believe that a Kickstarter Campaign for the creation of the High-Quality Demo App is a way that we can explore since it can help us meet several goals at once:
+-   Create publicity for the project over the Kickstarter Campaign period.
+-   Display the potential of the potential of the Boken Engine.
+-   Market research as to the features that end users, the consumers of apps made with Boken Engine would like to see and value.
+-   Create revenues to continue our work Boken Engine and grow our community.</p>
+<h2 id="future-evolution-of-the-software-and-business-model">Future evolution of the software and business model</h2>
+<p>The future evolution and roadmap of the software will shape the additional elements that will be included in the business model. </p>
+<p>For instance, if the project improves its usability and ease of installation in the future End Users will not require any development skills to install and use the Boken Engine.</p>
+<p>This for example would open additional possibilities to expand the number of potential users and help its adoption and growth. </p>
+<p>Also, no business model is fixed in stone, it is an evolutionary system which evolves to serve the needs of customers and also adapt to market conditions; therefore, it is always open to change.</p>
+<p><img alt="Proposed Business Model Canvas" src="opensource/docs/images/IOS-Open-Source-Business-Modelling-Proposed-Business-Model-2021-Boken-Engine.jpg" /></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
