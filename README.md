@@ -1,6 +1,6 @@
 # Open Source Guide
 
-![Open Source Software](/opensource/docs/images/Open_Source.jpg)
+![Open Source Software](./docs/images/Open_Source.jpg)
 
 The goal of this repository is to help you get acquainted with the elements that you need to consider when setting up an Open Source project or starting to contribute to one.
 
@@ -31,20 +31,20 @@ The goal of this repository is to help you get acquainted with the elements that
 
 ### Generic Research
 
-- [Best Practices](/opensource/docs/best-practices.md)
-- [Choose a license](/opensource/docs/choose-a-license.md)
-- [Business Model Research](/opensource/docs/business-model-research.md)
-- [Communication](/opensource/docs/communication.md)
-- [Contents Creation Guide](/opensource/docs/contents-creation-guide.md)
-- [Defining a governance model](/opensource/docs/define-a-governance-model.md)
-- [Releases process](/opensource/docs/releases-process.md)
+- [Best Practices](./docs/best-practices.md)
+- [Choose a license](./docs/choose-a-license.md)
+- [Business Model Research](./docs/business-model-research.md)
+- [Communication](./docs/communication.md)
+- [Contents Creation Guide](./docs/contents-creation-guide.md)
+- [Defining a governance model](./docs/define-a-governance-model.md)
+- [Releases process](./docs/releases-process.md)
 
 ### Sample conclusion documents and proposals
 
-- [BOKEN ENGINE - Proposed Business Model](/opensource/docs/sample_conclusions/BOKEN_ENGINE_–_Proposed_Business_Model.md)
-- [Proposal Governance "Benevolent Dictator"](/opensource/docs/sample_conclusions/proposal_governance_bdfl.md)
-- [Proposal Governance "Liberal"](/opensource/docs/sample_conclusions/proposal_governance_liberal.md)
-- [Use Cases and Communities](/opensource/docs/sample_conclusions/use-cases-and-communities.md)
+- [BOKEN ENGINE - Proposed Business Model](./docs/sample_conclusions/BOKEN_ENGINE_–_Proposed_Business_Model.md)
+- [Proposal Governance "Benevolent Dictator"](./docs/sample_conclusions/proposal_governance_bdfl.md)
+- [Proposal Governance "Liberal"](./docs/sample_conclusions/proposal_governance_liberal.md)
+- [Use Cases and Communities](./docs/sample_conclusions/use-cases-and-communities.md)
 
 ### Recommended Readings
 
@@ -76,10 +76,10 @@ The goal of this repository is to help you get acquainted with the elements that
 
 #### Repository Starting Documentation Templates
 
-- [Code of Conduct](/opensource/docs/templates_repository_starting/CODE_OF_CONDUCT.md)
-- [Governance](/opensource/docs/templates_repository_starting/GOVERNANCE_BD.md)
-- [Contributing](/opensource/docs/templates_repository_starting/CONTRIBUTING.md)
-- [Contributor Agreement](/opensource/docs/templates_repository_starting/contributor_agreement_v01.md)
+- [Code of Conduct](./docs/templates_repository_starting/CODE_OF_CONDUCT.md)
+- [Governance](./docs/templates_repository_starting/GOVERNANCE_BD.md)
+- [Contributing](./docs/templates_repository_starting/CONTRIBUTING.md)
+- [Contributor Agreement](./docs/templates_repository_starting/contributor_agreement_v01.md)
 
 ### Licenses
 
@@ -88,12 +88,12 @@ These are licenses that we have used in various projects.
 
 Sample licenses:
 
-- [MPL v. 2.0](/opensource/docs/templates_licenses/mpl-2.0.md)
-- [AGPL v. 3.0](/opensource/docs/templates_licenses/agpl-3.0.md)
-- [AGPL v. 3.0 - File Header Text](/opensource/docs/templates_licenses/agpl-3.0-file_header.txt)
-- [cc0](/opensource/docs/templates_licenses/cc0.md)
-- [ccbysa](/opensource/docs/templates_licenses/cc-by-sa.md)
-- [MIT v.0](/opensource/docs/templates_licenses/mit-0.md)
+- [MPL v. 2.0](./docs/templates_licenses/mpl-2.0.md)
+- [AGPL v. 3.0](./docs/templates_licenses/agpl-3.0.md)
+- [AGPL v. 3.0 - File Header Text](./docs/templates_licenses/agpl-3.0-file_header.txt)
+- [cc0](./docs/templates_licenses/cc0.md)
+- [ccbysa](./docs/templates_licenses/cc-by-sa.md)
+- [MIT v.0](./docs/templates_licenses/mit-0.md)
 
 If you want to learn more about other licenses we encourage you to go to these websites:
 
