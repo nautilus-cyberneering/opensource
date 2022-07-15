@@ -14,7 +14,7 @@ The goal of this repository is to help you get acquainted with the elements that
     - [Sample conclusion documents for creating a prior project](#sample-conclusion-documents-andproposals)
     - [Recommended Readings](#recommended-readings)
     - [FOSS Business Models](#foss-business-models)
-    - [Open Source Sources of Income Tools and Aids List](#)
+    - [Open Source Sources of Income Tools and Aids List](#open-source-sources-of-income-tools-and-aids-list)
     - [Recruiting Contributors](#recruiting-contributors)
     - [Templates](#templates)
     - [Licenses](#licenses)
