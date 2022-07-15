@@ -14,6 +14,7 @@ The goal of this repository is to help you get acquainted with the elements that
     - [Sample conclusion documents for creating a prior project](#sample-conclusion-documents-andproposals)
     - [Recommended Readings](#recommended-readings)
     - [FOSS Business Models](#foss-business-models)
+    - [Open Source Sources of Income Tools and Aids List](#)
     - [Recruiting Contributors](#recruiting-contributors)
     - [Templates](#templates)
     - [Licenses](#licenses)
@@ -67,6 +68,11 @@ The goal of this repository is to help you get acquainted with the elements that
 - [Decentralized Collaboration of Open Source Software Development
 ](https://www.cmu.edu/tepper/programs/phd/program/assets/dissertations/2020-economics-feng-dissertation.pdf) by Chi Feng
 - [Producing Open Source Software: How to Run a Successful Free Software Project](https://www.researchgate.net/publication/200026371_Producing_Open_Source_Software_How_to_Run_a_Successful_Free_Software_Project)
+
+### Open Source Sources of Income Tools and Aids List
+
+- [Open Source Sources of Income Tools and Aids List]()
+- [Filtered List of Income Tools and Aids](/docs/files/OSS%20Funding%20Options.xlsx%20-%20Filtered%20List%20of%20Options.pdf)
 
 ### Recruiting Contributors
 
