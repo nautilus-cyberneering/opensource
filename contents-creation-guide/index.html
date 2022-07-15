@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://nautilus-cyberneering.github.io/opensource/contents-creation-guide/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Contents Creation - Open Source Guide</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Open Source Guide</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../best-practices/" class="nav-link">Best Practices</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../releases-process/" class="nav-link">Releases Process</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../choose-a-license/" class="nav-link">Choose a License</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../communication/" class="nav-link">Communication</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Contents Creation</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../define-a-governance-model/" class="nav-link">Governance Model</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../business-model-research/" class="nav-link">Business Model</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../communication/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../define-a-governance-model/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#content-creation-guide" class="nav-link">Content creation guide</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#table-of-contents" class="nav-link">Table of Contents</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#1-how-do-i-create-content-using-boken-engine" class="nav-link">1. How do I create content using Boken Engine?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#2-some-concepts-regarding-the-contents" class="nav-link">2. Some concepts regarding the contents</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#3-horizontal-layout-properties" class="nav-link">3. Horizontal layout properties</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#4-content-description-file-structure" class="nav-link">4. Content description file structure</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#5-elements-position-and-rendering-precedence" class="nav-link">5. Elements position and rendering precedence</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#6-assets-catalogues" class="nav-link">6. Assets catalogues</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#7-content-description-file-example" class="nav-link">7. Content description file example</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#appendix-a-basic-data-types" class="nav-link">Appendix A: Basic data types</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#appendix-b-json-editors" class="nav-link">Appendix B: JSON editors</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="content-creation-guide">Content creation guide</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#section-intro">Creating contents using Boken Engine</a></li>
+<li><a href="#section-concepts">Some concepts</a></li>
+<li><a href="#section-horizontal">Horizontal layout properties</a></li>
+<li><a href="#section-structure">Content definition file structure</a></li>
+<li><a href="#elements-position">Elements position and rendering precedence</a></li>
+<li><a href="#section-catalogues">Assets catalogues</a></li>
+<li><a href="#section-example">Content definition file example</a> </li>
+<li><a href="#section-appa">Appendix A: Basic data types</a> </li>
+<li><a href="#section-appb">Appendix B: JSON editors</a> </li>
+</ol>
+<p><a name="section-intro"></a></p>
+<h2 id="1-how-do-i-create-content-using-boken-engine">1. How do I create content using Boken Engine?</h2>
+<p>The actual contents the engine is going to render are described in a file written using <a href="https://www.json.org/json-en.html">JSON</a>, a text-based standard information exchange format. Although it is very powerful, in our description file only some easy structures are used.
+This JSON file must be included in the project along with catalogues with assets  referenced in this file (see section <a href="#section-catalogues">Assets catalogues</a>), with the name <strong>StoryDescription.json</strong></p>
+<p><a name="section-concepts"></a></p>
+<h2 id="2-some-concepts-regarding-the-contents">2. Some concepts regarding the contents</h2>
+<ul>
+<li><em>Scenes</em>: The views in which are organized the contents. You can think of them as "slides". Each scene is composed of Elements, Navigations Buttons, Branch Buttons and an optional audio track that will play when the user gets to this scene.</li>
+<li><em>Scene Elements</em>: The individual entities that are displayed within the scene. At the moment of writing this, they can be images (loaded from JPEG files), text labels or rectangular coloured shapes.</li>
+<li><em>Transformations</em>: The images and the text labels can be animated via "transformations". Currently, there are two kinds of transformations: scale (size) and rotation. They can be combined. Each transformation is defined by its type, the final value for the property (scale or rotation) and how many seconds it takes to reach this value. </li>
+<li><em>Navigation Buttons</em>: Buttons at the bottom of the scene that can get you to the previous and the next scene. Depending on what the content creator decides, not all buttons (maybe none) may be present at a particular scene.</li>
+<li><em>Branches Buttons</em>: Buttons that gets the user to a particular scene, not necesarilly the next or previous one. It can be used to make branches in the storyline of the contents and introduce non-linearity.</li>
+</ul>
+<p><a name="section-horizontal"></a></p>
+<h2 id="3-horizontal-layout-properties">3. Horizontal layout properties</h2>
+<p>By default, all properties refer to the portrait (vertical) version of the application. For some properties, the user may also specify the value to be used when the App is being used on landscape (horizontal) mode. This landscape mode is always optional, and if is not present, the vertical value will be used in all orientations.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Landscape mode property</th>
+<th>Elements which applies to</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>posX</td>
+<td>posXH</td>
+<td>All</td>
+<td>Position of the center of the elements, in the X-Axis of the relative screen space (0 to 1)</td>
+</tr>
+<tr>
+<td>posY</td>
+<td>posYH</td>
+<td>All</td>
+<td>Position of the center of the elements, in the Y-Axis of the relative screen space (0 to 1)</td>
+</tr>
+<tr>
+<td>scale</td>
+<td>scaleH</td>
+<td>Image</td>
+<td>Scale of the image, relative to its natural size</td>
+</tr>
+<tr>
+<td>fontSize</td>
+<td>fontSizeH</td>
+<td>TextLabel</td>
+<td>Font size, in points</td>
+</tr>
+<tr>
+<td>width</td>
+<td>widthH</td>
+<td>Shape</td>
+<td>Width of the rectangle, relative to the screen width</td>
+</tr>
+<tr>
+<td>height</td>
+<td>heightH</td>
+<td>Shape</td>
+<td>Width of the rectangle, relative to the screen height</td>
+</tr>
+<tr>
+<td>toValue</td>
+<td>toValue</td>
+<td>Transformations</td>
+<td>Final vale for the transformed property (size or angle)</td>
+</tr>
+</tbody>
+</table>
+<p><a name="section-structure"></a></p>
+<h2 id="4-content-description-file-structure">4. Content description file structure</h2>
+<p>The content description file must contain a valid "application definition" object, the structure of which is defined below, along with its sub-structures. If you are not familiarized with basic data types, please refer to "Appendix A: basic data types"</p>
+<h3 id="application-definition">Application definition:</h3>
+<pre><code>    {
+        &quot;appTitle&quot;: String
+        &quot;scenes&quot;: [SceneDescription]
+        &quot;backgroundMusic&quot;: String String // Name of a MP3 resource within the Bundle. Optional
+    }
+</code></pre>
+<h3 id="scene-description">Scene description:</h3>
+<pre><code>    {
+        &quot;sceneId&quot;: String
+        &quot;elements&quot;: Elements
+        &quot;navigation&quot; // Possible values: next | back | both | none
+        &quot;branches&quot;: [Branch] // Optional
+        &quot;audio&quot;: String // Name of a WAV resource within the Bundle. Optional
+        &quot;background&quot;: String // Possible values: &quot;white&quot;, &quot;black&quot;. Optional
+    }
+</code></pre>
+<h3 id="branch">Branch</h3>
+<pre><code>    {
+        &quot;label&quot;: String
+        &quot;target&quot;: String // Reference to the sceneId of the destination scene
+    }
+</code></pre>
+<h3 id="elements">Elements:</h3>
+<pre><code>    {
+        &quot;elementsArray&quot;: [subclass-of-ElementDescription]
+    }
+</code></pre>
+<p><em>Note</em>: Position of the elements in the array matters. Please check <a href="elements-position">next section</a> to know more.</p>
+<h3 id="elementdescription">ElementDescription</h3>
+<pre><code>    {
+        &quot;type&quot;: String // Possible values: &quot;textLabel&quot;, &quot;image&quot;, &quot;shape&quot;
+        &quot;posX&quot;: Float
+        &quot;posY&quot;: Float
+        &quot;posXH&quot;: Float // Optional
+        &quot;posYH&quot;: Float // Optional
+    }
+</code></pre>
+<h3 id="shapedescription-subclass-of-elementdescription">ShapeDescription (subclass of ElementDescription)</h3>
+<pre><code>    {   
+        &quot;width&quot;: Float
+        &quot;height&quot;: Float
+        &quot;color&quot;: String
+        &quot;widthH&quot;: Float // Optional
+        &quot;heightH&quot;: Float // Optional
+    }
+</code></pre>
+<h3 id="imagedescription-subclass-of-elementdescription">ImageDescription (subclass of ElementDescription)</h3>
+<pre><code>    {
+        &quot;imageFile&quot;: String // Name of a JPEG resource within the Bundle
+        &quot;scale&quot;: Float
+        &quot;scaleH&quot;: Float // Optional
+        &quot;transformations&quot;: [TransformationDescription]
+    }
+</code></pre>
+<h3 id="textlabeldescription-subclass-of-elementdescription">TextLabelDescription (subclass of ElementDescription)</h3>
+<pre><code>    {
+        &quot;content&quot;: String
+        &quot;fontSize&quot;: Float
+        &quot;style&quot;: String  // Possible values: &quot;normal&quot;, &quot;bold&quot;, &quot;italic&quot;, &quot;boldItalic&quot;
+        &quot;fontSizeH&quot;: Float // Optional
+        &quot;transformations&quot;: [TransformationDescription] // Optional
+    }
+</code></pre>
+<h3 id="transformationdescription-decodable">TransformationDescription: Decodable</h3>
+<pre><code>    {
+        &quot;type&quot;: String  // Possible values: &quot;scale&quot;, &quot;rotation&quot;
+        &quot;toValue&quot;: Float
+        &quot;toValueH&quot;: Float // Optional
+    }
+</code></pre>
+<p><a name="elements-position"></a></p>
+<h2 id="5-elements-position-and-rendering-precedence">5. Elements position and rendering precedence</h2>
+<p>In the previous section we defined the collection of elements to be rendered as an array.  Facing how the order in which the elements are going to be rendered (and thus, how they will overlap each other) we decided for simply corelate the position in the array with the render order (so the first elements in the array will be the first rendered, and could be overlaped by the other) and neglected introducing an explicit order property, to achieve simplicity in the elements collection changes and having a direct corelation between array order and render order, accepting implicit domain implications and semantics in the structure.</p>
+<p><a name="section-catalogues"></a></p>
+<h2 id="6-assets-catalogues">6. Assets catalogues</h2>
+<p>There are three properties in the JSON file that refers to external files within the project structure:</p>
+<ul>
+<li><strong>ImageFile</strong> of the Image Element description (JPEG)</li>
+<li><strong>Audio</strong> of the Scene description (WAV)</li>
+<li><strong>backgroundMusic</strong> of the App description (MP3)</li>
+</ul>
+<p>Those are references to assets that must be present inside the project as part of Assets Catalogues (.xcassets folders).</p>
+<p>A detailed explanation on how to create an asset catalog in your project is described at <a href="https://www.hackingwithswift.com/example-code/xcode/how-to-load-assets-from-xcode-asset-catalogs">this Hacking with Swift's post</a> but basically you have to do the following:</p>
+<p>Right-click on your project and choose "New File".</p>
+<p><img alt="New asset catalog" src="../images/contents-creation-guide-01-new-asset-catalog.png" /></p>
+<p>From "iOS" choose "Resource" then "Asset Catalog", then click "Next" and name your catalog. You can now select your new asset catalog in Xcode, and drag pictures directly into it.</p>
+<p><img alt="New asset folder" src="../images/contents-creation-guide-02-assets-folder.png" /></p>
+<p>Images stored inside asset catalog all retain their original filename, minus the path extension part. For example, "king-castle.png" will just appear as "king-castle" inside your asst catalog, and that's how you should refer to it while loading too.</p>
+<p>Asset catalogs automatically keep track of Retina and Retina HD images, but it's recommended that you name your images smartly to help make the process more smooth: king-castle.png, king-castle@2x.png and king-castle@3x.png are the best way to name your files for standard, Retina and Retina HD resolutions respectively.</p>
+<p><a name="section-example"></a></p>
+<h2 id="7-content-description-file-example">7. Content description file example</h2>
+<pre><code class="language-JSON">{
+    &quot;appTitle&quot;: &quot;My Cute App&quot;,
+    &quot;backgroundMusic&quot;: &quot;SuperBackgroundMusicFile&quot;,
+    &quot;scenes&quot;: [
+        {
+            &quot;sceneId&quot;: &quot;TitleScene&quot;,
+            &quot;elements&quot;: {
+                &quot;elementsArray&quot;: [
+                    {
+                        &quot;type&quot;: &quot;image&quot;,
+                        &quot;imageFile&quot;: &quot;cuteBackground&quot;,
+                        &quot;posX&quot;: 0.5,
+                        &quot;posY&quot;: 0.5,
+                        &quot;scale&quot;: 1,
+                        &quot;transformations&quot;: [
+                            {
+                                &quot;type&quot;: &quot;scale&quot;,
+                                &quot;toValue&quot;: 1.25,
+                                &quot;duration&quot;: 10
+                            }
+                        ]
+                    },
+                    {
+                        &quot;type&quot;: &quot;textLabel&quot;,
+                        &quot;content&quot;: &quot;Welcome to my Cute App!&quot;,
+                        &quot;posX&quot;: 0.5,
+                        &quot;posY&quot;: 0.86,
+                        &quot;fontSize&quot;: 36,
+                    }
+                ]
+            },
+            &quot;branches&quot;: [
+                {
+                    &quot;label&quot;: &quot;Credits&quot;,
+                    &quot;target&quot;: &quot;finalSlide&quot;
+                },
+                {
+                    &quot;label&quot;: &quot;START&quot;,
+                    &quot;target&quot;: &quot;Slide01&quot;
+                }
+            ],
+            &quot;background&quot;: &quot;black&quot;,
+            &quot;navigation&quot;: &quot;none&quot;
+        },
+        {
+            &quot;sceneId&quot;: &quot;Slide01&quot;,
+            &quot;elements&quot;: {
+                &quot;elementsArray&quot;: [
+                    {
+                        &quot;type&quot;: &quot;textLabel&quot;,
+                        &quot;content&quot;: &quot;Hello World!&quot;,
+                        &quot;posX&quot;: 0.5,
+                        &quot;posY&quot;: 0.55,
+                        &quot;fontSize&quot;: 36,
+                        &quot;style&quot;: &quot;bold&quot;
+                    }
+                ]
+            },
+            &quot;background&quot;: &quot;black&quot;,
+            &quot;navigation&quot;: &quot;next&quot;
+        },
+        {
+            &quot;sceneId&quot;: &quot;Slide02&quot;,
+            &quot;elements&quot;: {
+                &quot;elementsArray&quot;: [
+                    {
+                        &quot;type&quot;: &quot;textLabel&quot;,
+                        &quot;content&quot;: &quot;Nice to meet you!&quot;,
+                        &quot;posX&quot;: 0.5,
+                        &quot;posY&quot;: 0.45,
+                        &quot;fontSize&quot;: 23,
+                    }
+                ]
+            },
+            &quot;background&quot;: &quot;black&quot;,
+            &quot;navigation&quot;: &quot;both&quot;
+        },
+        {
+            &quot;sceneId&quot;: &quot;finalSlide&quot;,
+            &quot;elements&quot;: {
+                &quot;elementsArray&quot;: [
+                    {
+                        &quot;type&quot;: &quot;textLabel&quot;,
+                        &quot;content&quot;: &quot;Credits: me!&quot;,
+                        &quot;posX&quot;: 0.5,
+                        &quot;posY&quot;: 0.5,
+                        &quot;fontSize&quot;: 24,
+                    }
+                ]              
+            },
+            &quot;background&quot;: &quot;white&quot;,
+            &quot;navigation&quot;: &quot;back&quot;,
+            &quot;branches&quot;: [
+                {
+                    &quot;label&quot;: &quot;Start again&quot;,
+                    &quot;target&quot;: &quot;TitleScene&quot;
+                }
+            ],
+        }
+    ]
+}
+
+</code></pre>
+<p><a name="section-appa"></a></p>
+<h2 id="appendix-a-basic-data-types">Appendix A: Basic data types</h2>
+<p>Those are the basic data types used in this definition</p>
+<table>
+<thead>
+<tr>
+<th>Data type</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>String</td>
+<td>A UTF-8 string (word, phrase...)</td>
+<td>"This is an example"</td>
+</tr>
+<tr>
+<td>Float</td>
+<td>A integer or dot-separated decimal number</td>
+<td>0, 5, 10.50</td>
+</tr>
+<tr>
+<td>Array</td>
+<td>A collection of elements delimited by brackets</td>
+<td>[a,b,c]</td>
+</tr>
+</tbody>
+</table>
+<p><a name="section-appb"></a></p>
+<h2 id="appendix-b-json-editors">Appendix B: JSON editors</h2>
+<p>Although you can edit the JSON file using simple editors like the Notepad of Windows, it can be quite a difficult and error-prone task. We suggest using a desktop editor or an online tool. 
+Those are just some examples of online JSON editors:</p>
+<ul>
+<li><a href="https://jsoneditoronline.org/">JSON Editor online</a></li>
+<li><a href="https://jsonformatter.org/json-editor">JSON editor at JSONFormatter</a></li>
+<li><a href="https://www.tutorialspoint.com/online_json_editor.htm">JSON editor at Tutorials Point</a></li>
+</ul>
+<p><em>Disclaimer: We are not related with the developers of those online tools. Use them at your own risk.</em></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
