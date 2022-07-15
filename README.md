@@ -71,7 +71,7 @@ The goal of this repository is to help you get acquainted with the elements that
 
 ### Open Source Sources of Income Tools and Aids List
 
-- [Open Source Sources of Income Tools and Aids List]()
+- [Open Source Sources of Income Tools and Aids List - Article](https://nautilus-cyberneering.de/2022/07/15/open-source-sources-of-income-easy-tools-and-aids/)
 - [Filtered List of Income Tools and Aids](/docs/files/OSS%20Funding%20Options.xlsx%20-%20Filtered%20List%20of%20Options.pdf)
 
 ### Recruiting Contributors
